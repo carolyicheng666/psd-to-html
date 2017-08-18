@@ -11,7 +11,7 @@ $ git clone git@github.com:carolyicheng666/psd-to-html.git
 Then 
 
 ```bash
-$ npm install gulp gulp-clean-css gulp-concat gulp-imagemin --save-dev
+$ npm install
 ```
 
 And
