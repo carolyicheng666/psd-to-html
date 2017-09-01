@@ -1,245 +1,257 @@
+/* line 3, ../sass/index.scss */
 .index-banner {
-	position: relative;
-	background: #b3b3b3;
+  position: relative;
+  background: #b3b3b3;
 }
 
+/* line 8, ../sass/index.scss */
 .index-banner-bg {
-	height: 570px;
-	overflow: hidden;
+  height: 570px;
+  overflow: hidden;
 }
-
+/* line 11, ../sass/index.scss */
 .index-banner-bg img {
-	margin: 0 auto;
+  margin: 0 auto;
 }
 
+/* line 16, ../sass/index.scss */
 .index-banner-text {
-	position: absolute;
-	top: 200px;
-	left: 50%;
-	margin-left: -388px;
+  position: absolute;
+  top: 200px;
+  left: 50%;
+  margin-left: -388px;
 }
-
-.text-logo {
-	width: 776px;
-	height: 117px;
-	background: url("../images/text-logo.png") no-repeat;
-}
-
+/* line 21, ../sass/index.scss */
 .index-banner-text .text-info {
-	margin-top: 17px;
-	text-align: center;
-	color: #fff;
+  margin-top: 17px;
+  text-align: center;
+  color: #fff;
 }
-
+/* line 25, ../sass/index.scss */
 .index-banner-text .text-info .line {
-	display: inline-block;
-	width: 40px;
-	border-top: 1px solid #fff;
-	vertical-align: middle;
-	*margin-top: 22px;
+  display: inline-block;
+  width: 40px;
+  border-top: 1px solid #fff;
+  vertical-align: middle;
+  *margin-top: 22px;
 }
-
+/* line 32, ../sass/index.scss */
 .index-banner-text .text-info .txt {
-	margin: 0 26px;
+  margin: 0 26px;
 }
 
+/* line 38, ../sass/index.scss */
+.text-logo {
+  width: 776px;
+  height: 117px;
+  background: url("../images/text-logo.png") no-repeat;
+}
+
+/* line 44, ../sass/index.scss */
 .index-menu {
-	position: relative;
-	border-top: 4px solid #f34949;
+  position: relative;
+  border-top: 4px solid #f34949;
 }
-
+/* line 47, ../sass/index.scss */
 .index-menu .menu-tips {
-	position: absolute;
-	left: 50%;
-	top: 0;
-	margin-left: -78px;
-	width: 156px;
-	height: 75px;
-	text-align: center;
-	line-height: 65px;
-	color: #fff;
-	background: #f34949;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  margin-left: -78px;
+  width: 156px;
+  height: 75px;
+  text-align: center;
+  line-height: 65px;
+  color: #fff;
+  background: #f34949;
 }
-
+/* line 58, ../sass/index.scss */
 .index-menu .menu-tips:after {
-	position: absolute;
-	content: '';
-	left: 0;
-	bottom: 0;
-	width: 0;
-	height: 0;
-	border-left: 78px solid transparent;
-	border-right: 78px solid transparent;
-	border-bottom: 10px solid #fff;
+  position: absolute;
+  content: '';
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-left: 78px solid transparent;
+  border-right: 78px solid transparent;
+  border-bottom: 10px solid #fff;
 }
-
+/* line 70, ../sass/index.scss */
 .index-menu .menu-list {
-	margin-top: 150px;
-	color: #555;
-	overflow: hidden;
+  margin-top: 150px;
+  color: #555;
+  overflow: hidden;
 }
-
+/* line 74, ../sass/index.scss */
 .index-menu .menu-list ul {
-	width: 1160px;
+  width: 1160px;
 }
-
+/* line 78, ../sass/index.scss */
 .index-menu .menu-item {
-	float: left;
-	width: 520px;
-	margin-right: 60px;
-	margin-bottom: 56px;
+  float: left;
+  width: 520px;
+  margin-right: 60px;
+  margin-bottom: 56px;
 }
-
-.index-menu .menu-item .title, .index-menu .menu-item .line {
-	float: left;
-}
-
-.index-menu .menu-item .price {
-	float: right;
-}
-
+/* line 85, ../sass/index.scss */
 .index-menu .menu-item .title {
-	width: 230px;
-	color: #555;
-	overflow: hidden;
-	white-space: nowrap;
-	text-overflow: ellipsis;
+  float: left;
 }
-
-.index-menu .menu-item .comment {
-	margin-top: 4px;
-	color: #b7b7b7;
-	font-size: 12px;
-}
-
+/* line 88, ../sass/index.scss */
 .index-menu .menu-item .line {
-	margin-top: 10px;
-	width: 192px;
-	border-top: 1px solid #e3e1e1;
+  float: left;
+  margin-top: 10px;
+  width: 192px;
+  border-top: 1px solid #e3e1e1;
 }
-
+/* line 94, ../sass/index.scss */
+.index-menu .menu-item .price {
+  float: right;
+}
+/* line 97, ../sass/index.scss */
+.index-menu .menu-item .title {
+  width: 230px;
+  color: #555;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+/* line 104, ../sass/index.scss */
+.index-menu .menu-item .comment {
+  margin-top: 4px;
+  color: #b7b7b7;
+  font-size: 12px;
+}
+/* line 110, ../sass/index.scss */
 .index-menu .menu-more-btn {
-	margin: 0 auto;
-	width: 114px;
-	height: 32px;
-	padding-left: 16px;
-	border: 1px solid #d7d5d5;
-	font-size: 14px;
-	line-height: 32px;
-	color: #b7b7b7;
+  margin: 0 auto;
+  width: 114px;
+  height: 32px;
+  padding-left: 16px;
+  border: 1px solid #d7d5d5;
+  font-size: 14px;
+  line-height: 32px;
+  color: #b7b7b7;
 }
-
+/* line 119, ../sass/index.scss */
 .index-menu .menu-more-btn .icon {
-	display: inline-block;
-	width: 11px;
-	height: 7px;
-	margin-left: 10px;
-	background: url("../images/index-menu-btn.png") no-repeat;
+  display: inline-block;
+  width: 11px;
+  height: 7px;
+  margin-left: 10px;
+  background: url("../images/index-menu-btn.png") no-repeat;
 }
 
+/* line 129, ../sass/index.scss */
 .index-panel {
-	margin-top: 200px;
+  margin-top: 200px;
 }
 
+/* line 134, ../sass/index.scss */
 .index-panel-header h3 {
-	float: left;
-	margin-right: 48px;
-	font-size: 20px;
-	color: #3b3b3b;
-	font-weight: normal;
+  float: left;
+  margin-right: 48px;
+  font-size: 20px;
+  font-weight: normal;
+  color: #3b3b3b;
 }
-
+/* line 143, ../sass/index.scss */
 .index-panel-header .line {
-	float: left;
-	margin-top: 10px;
-	width: 200px;
-	border-top: 1px solid #e5e3e3;
+  float: left;
+  margin-top: 10px;
+  width: 200px;
+  border-top: 1px solid #e5e3e3;
 }
-
+/* line 149, ../sass/index.scss */
 .index-panel-header .btn-group {
-	font-size: 0;
-	float: right;
+  font-size: 0;
+  float: right;
 }
-
+/* line 153, ../sass/index.scss */
 .index-panel-header .btn {
-	display: inline-block;
-	margin-left: 11px;
-	width: 9px;
-	height: 9px;
-	background: #dedede;
-	border-radius: 50%;
+  display: inline-block;
+  margin-left: 11px;
+  width: 9px;
+  height: 9px;
+  background: #dedede;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
 }
-
+/* line 161, ../sass/index.scss */
 .index-panel-header .active {
-	background: #9b9b9b;
+  background: #9b9b9b;
 }
 
+/* line 166, ../sass/index.scss */
 .index-panel-body {
-	margin-top: 75px;
+  margin-top: 75px;
 }
 
+/* line 170, ../sass/index.scss */
 .index-food-list {
-	overflow: hidden;
+  overflow: hidden;
 }
-
+/* line 172, ../sass/index.scss */
 .index-food-list ul {
-	width: 1160px;
+  width: 1160px;
 }
-
+/* line 175, ../sass/index.scss */
 .index-food-list .food-item {
-	float: left;
-	width: 230px;
-	margin-right: 60px;
+  float: left;
+  width: 230px;
+  margin-right: 60px;
 }
-
+/* line 179, ../sass/index.scss */
 .index-food-list .food-item .banner {
-	margin-bottom: 30px;
-	height: 202px;
+  margin-bottom: 30px;
+  height: 202px;
 }
-
+/* line 183, ../sass/index.scss */
 .index-food-list .food-item .name {
-	color: #555;
-	margin-bottom: 10px;
+  color: #555;
+  margin-bottom: 10px;
 }
-
+/* line 187, ../sass/index.scss */
 .index-food-list .food-item .price {
-	float: right;
+  float: right;
 }
-
+/* line 190, ../sass/index.scss */
 .index-food-list .food-item .star-bar {
-	font-size: 0;
+  font-size: 0;
 }
-
+/* line 193, ../sass/index.scss */
 .index-food-list .food-item .star {
-	display: inline-block;
-	width: 12px;
-	height: 13px;
-	margin-right: 5px;
-	background-image: url("../images/star.png");
-	background-repeat: no-repeat;
+  display: inline-block;
+  width: 12px;
+  height: 13px;
+  margin-right: 5px;
+  background: url("../images/star.png") no-repeat;
 }
-
+/* line 200, ../sass/index.scss */
 .index-food-list .food-item .nostar {
-	background-position: 0 -13px;
+  background-position: 0 -13px;
 }
 
+/* line 206, ../sass/index.scss */
 .index-pics {
-	height: 380px;
-	overflow: hidden;
+  height: 380px;
+  overflow: hidden;
 }
-
+/* line 209, ../sass/index.scss */
 .index-pics .pic-col {
-	float: left;
+  float: left;
 }
-
+/* line 212, ../sass/index.scss */
 .index-pics .pic-col-m {
-	width: 353px;
+  width: 353px;
 }
-
+/* line 215, ../sass/index.scss */
 .index-pics .pic-col-s {
-	width: 287px;
+  width: 287px;
 }
-
+/* line 218, ../sass/index.scss */
 .index-pics .pic-col-l {
-	width: 460px;
+  width: 460px;
 }
