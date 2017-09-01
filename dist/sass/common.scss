@@ -1,9 +1,10 @@
 @import "compass/css3";
+@import "compass/utilities";
 
 .public-header {
 	height: 110px;
 	.header-logo {
-		float: left;
+		@include float(left);
 		margin-top: 40px;
 		a {
 			width: 182px;
@@ -12,10 +13,10 @@
 		}
 	}
 	.header-nav {
-		float: right;
+		@include float(right);
 		font-size: 14px;
 		.item {
-			float: left;
+			@include float(left);
 			margin: {
 				top: 44px;
 				left: 50px;
@@ -43,7 +44,7 @@
 	background: #3b3b3b;
 	.footer-col {
 		width: 230px;
-		float: left;
+		@include float(left);
 		margin-right: 60px;
 		font-size: 16px;
 		color: #fff;

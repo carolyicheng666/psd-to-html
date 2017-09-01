@@ -1,4 +1,6 @@
 @import "compass/css3";
+@import "compass/utilities";
+@import "compass/typography";
 
 .index-banner {
 	position: relative;
@@ -23,10 +25,10 @@
 		text-align: center;
 		color: #fff;
 		.line {
-			display: inline-block;
+			@include inline-block;
 			width: 40px;
 			border-top: 1px solid #fff;
-			vertical-align: middle;
+			/* vertical-align: middle; */
 			*margin-top: 22px;
 		}
 		.txt {
@@ -76,30 +78,28 @@
 		}
 	}
 	.menu-item {
-		float: left;
+		@include float(left);
 		width: 520px;
 		margin: {
 			right: 60px;
 			bottom: 56px;
 		}
 		.title {
-			float: left;
+			@include float(left);
 		}
 		.line {
-			float: left;
+			@include float(left);
 			margin-top: 10px;
 			width: 192px;
 			border-top: 1px solid #e3e1e1;
 		}
 		.price {
-			float: right;
+			@include float(right);
 		}
 		.title {
 			width: 230px;
 			color: #555;
-			overflow: hidden;
-			white-space: nowrap;
-			text-overflow: ellipsis;
+			@include ellipsis;
 		}
 		.comment {
 			margin-top: 4px;
@@ -117,7 +117,7 @@
 		line-height: 32px;
 		color: #b7b7b7;
 		.icon {
-			display: inline-block;
+			@include inline-block;
 			width: 11px;
 			height: 7px;
 			margin-left: 10px;
@@ -132,7 +132,7 @@
 
 .index-panel-header {
 	h3 {
-		float: left;
+		@include float(left);
 		margin-right: 48px;
 		font: {
 			size: 20px;
@@ -141,17 +141,17 @@
 		color: #3b3b3b;
 	}
 	.line {
-		float: left;
+		@include float(left);
 		margin-top: 10px;
 		width: 200px;
 		border-top: 1px solid #e5e3e3;
 	}
 	.btn-group {
 		font-size: 0;
-		float: right;
+		@include float(right);
 	}
 	.btn {
-		display: inline-block;
+		@include inline-block;
 		margin-left: 11px;
 		width: 9px;
 		height: 9px;
@@ -173,7 +173,7 @@
 		width: 1160px;
 	}
 	.food-item {
-		float: left;
+		@include float(left);
 		width: 230px;
 		margin-right: 60px;
 		.banner {
@@ -185,13 +185,13 @@
 			margin-bottom: 10px;
 		}
 		.price {
-			float: right;
+			@include float(right);
 		}
 		.star-bar {
 			font-size: 0;
 		}
 		.star {
-			display: inline-block;
+			@include inline-block;
 			width: 12px;
 			height: 13px;
 			margin-right: 5px;
@@ -207,7 +207,7 @@
 	height: 380px;
 	overflow: hidden;
 	.pic-col {
-		float: left;
+		@include float(left);
 	}
 	.pic-col-m {
 		width: 353px;
