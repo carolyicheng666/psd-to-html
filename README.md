@@ -27,6 +27,8 @@ Then
 $ compass compile
 ```
 
+Last
+
 ```bash
 $ gulp
 ```
