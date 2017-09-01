@@ -1,6 +1,7 @@
 @import "compass/css3";
 @import "compass/utilities";
 @import "compass/typography";
+@import "compass/layout";
 
 .index-banner {
 	position: relative;
@@ -16,9 +17,7 @@
 }
 
 .index-banner-text {
-	position: absolute;
-	top: 200px;
-	left: 50%;
+	@include stretch(200px, false, false, 50%);
 	margin-left: -388px;
 	.text-info {
 		margin-top: 17px;
@@ -47,9 +46,7 @@
 	position: relative;
 	border-top: 4px solid #f34949;
 	.menu-tips {
-		position: absolute;
-		left: 50%;
-		top: 0;
+		@include stretch(0, false, false, 50%);
 		margin-left: -78px;
 		width: 156px;
 		height: 75px;
@@ -58,10 +55,8 @@
 		color: #fff;
 		background: #f34949;
 		&:after {
-			position: absolute;
+			@include stretch(false, false, 0, 0);
 			content: '';
-			left: 0;
-			bottom: 0;
 			width: 0;
 			height: 0;
 			border-left: 78px solid transparent;

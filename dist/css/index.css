@@ -1,33 +1,33 @@
-/* line 5, ../sass/index.scss */
+/* line 6, ../sass/index.scss */
 .index-banner {
   position: relative;
   background: #b3b3b3;
 }
 
-/* line 10, ../sass/index.scss */
+/* line 11, ../sass/index.scss */
 .index-banner-bg {
   height: 570px;
   overflow: hidden;
 }
-/* line 13, ../sass/index.scss */
+/* line 14, ../sass/index.scss */
 .index-banner-bg img {
   margin: 0 auto;
 }
 
-/* line 18, ../sass/index.scss */
+/* line 19, ../sass/index.scss */
 .index-banner-text {
   position: absolute;
   top: 200px;
   left: 50%;
   margin-left: -388px;
 }
-/* line 23, ../sass/index.scss */
+/* line 22, ../sass/index.scss */
 .index-banner-text .text-info {
   margin-top: 17px;
   text-align: center;
   color: #fff;
 }
-/* line 27, ../sass/index.scss */
+/* line 26, ../sass/index.scss */
 .index-banner-text .text-info .line {
   display: inline-block;
   vertical-align: middle;
@@ -39,28 +39,28 @@
   /* vertical-align: middle; */
   *margin-top: 22px;
 }
-/* line 34, ../sass/index.scss */
+/* line 33, ../sass/index.scss */
 .index-banner-text .text-info .txt {
   margin: 0 26px;
 }
 
-/* line 40, ../sass/index.scss */
+/* line 39, ../sass/index.scss */
 .text-logo {
   width: 776px;
   height: 117px;
   background: url("../images/text-logo.png") no-repeat;
 }
 
-/* line 46, ../sass/index.scss */
+/* line 45, ../sass/index.scss */
 .index-menu {
   position: relative;
   border-top: 4px solid #f34949;
 }
-/* line 49, ../sass/index.scss */
+/* line 48, ../sass/index.scss */
 .index-menu .menu-tips {
   position: absolute;
-  left: 50%;
   top: 0;
+  left: 50%;
   margin-left: -78px;
   width: 156px;
   height: 75px;
@@ -69,51 +69,51 @@
   color: #fff;
   background: #f34949;
 }
-/* line 60, ../sass/index.scss */
+/* line 57, ../sass/index.scss */
 .index-menu .menu-tips:after {
   position: absolute;
-  content: '';
-  left: 0;
   bottom: 0;
+  left: 0;
+  content: '';
   width: 0;
   height: 0;
   border-left: 78px solid transparent;
   border-right: 78px solid transparent;
   border-bottom: 10px solid #fff;
 }
-/* line 72, ../sass/index.scss */
+/* line 67, ../sass/index.scss */
 .index-menu .menu-list {
   margin-top: 150px;
   color: #555;
   overflow: hidden;
 }
-/* line 76, ../sass/index.scss */
+/* line 71, ../sass/index.scss */
 .index-menu .menu-list ul {
   width: 1160px;
 }
-/* line 80, ../sass/index.scss */
+/* line 75, ../sass/index.scss */
 .index-menu .menu-item {
   float: left;
   width: 520px;
   margin-right: 60px;
   margin-bottom: 56px;
 }
-/* line 87, ../sass/index.scss */
+/* line 82, ../sass/index.scss */
 .index-menu .menu-item .title {
   float: left;
 }
-/* line 90, ../sass/index.scss */
+/* line 85, ../sass/index.scss */
 .index-menu .menu-item .line {
   float: left;
   margin-top: 10px;
   width: 192px;
   border-top: 1px solid #e3e1e1;
 }
-/* line 96, ../sass/index.scss */
+/* line 91, ../sass/index.scss */
 .index-menu .menu-item .price {
   float: right;
 }
-/* line 99, ../sass/index.scss */
+/* line 94, ../sass/index.scss */
 .index-menu .menu-item .title {
   width: 230px;
   color: #555;
@@ -123,13 +123,13 @@
   -o-text-overflow: ellipsis;
   text-overflow: ellipsis;
 }
-/* line 104, ../sass/index.scss */
+/* line 99, ../sass/index.scss */
 .index-menu .menu-item .comment {
   margin-top: 4px;
   color: #b7b7b7;
   font-size: 12px;
 }
-/* line 110, ../sass/index.scss */
+/* line 105, ../sass/index.scss */
 .index-menu .menu-more-btn {
   margin: 0 auto;
   width: 114px;
@@ -140,7 +140,7 @@
   line-height: 32px;
   color: #b7b7b7;
 }
-/* line 119, ../sass/index.scss */
+/* line 114, ../sass/index.scss */
 .index-menu .menu-more-btn .icon {
   display: inline-block;
   vertical-align: middle;
@@ -153,12 +153,12 @@
   background: url("../images/index-menu-btn.png") no-repeat;
 }
 
-/* line 129, ../sass/index.scss */
+/* line 124, ../sass/index.scss */
 .index-panel {
   margin-top: 200px;
 }
 
-/* line 134, ../sass/index.scss */
+/* line 129, ../sass/index.scss */
 .index-panel-header h3 {
   float: left;
   margin-right: 48px;
@@ -166,19 +166,19 @@
   font-weight: normal;
   color: #3b3b3b;
 }
-/* line 143, ../sass/index.scss */
+/* line 138, ../sass/index.scss */
 .index-panel-header .line {
   float: left;
   margin-top: 10px;
   width: 200px;
   border-top: 1px solid #e5e3e3;
 }
-/* line 149, ../sass/index.scss */
+/* line 144, ../sass/index.scss */
 .index-panel-header .btn-group {
   font-size: 0;
   float: right;
 }
-/* line 153, ../sass/index.scss */
+/* line 148, ../sass/index.scss */
 .index-panel-header .btn {
   display: inline-block;
   vertical-align: middle;
@@ -193,49 +193,49 @@
   -webkit-border-radius: 50%;
   border-radius: 50%;
 }
-/* line 161, ../sass/index.scss */
+/* line 156, ../sass/index.scss */
 .index-panel-header .active {
   background: #9b9b9b;
 }
 
-/* line 166, ../sass/index.scss */
+/* line 161, ../sass/index.scss */
 .index-panel-body {
   margin-top: 75px;
 }
 
-/* line 170, ../sass/index.scss */
+/* line 165, ../sass/index.scss */
 .index-food-list {
   overflow: hidden;
 }
-/* line 172, ../sass/index.scss */
+/* line 167, ../sass/index.scss */
 .index-food-list ul {
   width: 1160px;
 }
-/* line 175, ../sass/index.scss */
+/* line 170, ../sass/index.scss */
 .index-food-list .food-item {
   float: left;
   width: 230px;
   margin-right: 60px;
 }
-/* line 179, ../sass/index.scss */
+/* line 174, ../sass/index.scss */
 .index-food-list .food-item .banner {
   margin-bottom: 30px;
   height: 202px;
 }
-/* line 183, ../sass/index.scss */
+/* line 178, ../sass/index.scss */
 .index-food-list .food-item .name {
   color: #555;
   margin-bottom: 10px;
 }
-/* line 187, ../sass/index.scss */
+/* line 182, ../sass/index.scss */
 .index-food-list .food-item .price {
   float: right;
 }
-/* line 190, ../sass/index.scss */
+/* line 185, ../sass/index.scss */
 .index-food-list .food-item .star-bar {
   font-size: 0;
 }
-/* line 193, ../sass/index.scss */
+/* line 188, ../sass/index.scss */
 .index-food-list .food-item .star {
   display: inline-block;
   vertical-align: middle;
@@ -247,29 +247,29 @@
   margin-right: 5px;
   background: url("../images/star.png") no-repeat;
 }
-/* line 200, ../sass/index.scss */
+/* line 195, ../sass/index.scss */
 .index-food-list .food-item .nostar {
   background-position: 0 -13px;
 }
 
-/* line 206, ../sass/index.scss */
+/* line 201, ../sass/index.scss */
 .index-pics {
   height: 380px;
   overflow: hidden;
 }
-/* line 209, ../sass/index.scss */
+/* line 204, ../sass/index.scss */
 .index-pics .pic-col {
   float: left;
 }
-/* line 212, ../sass/index.scss */
+/* line 207, ../sass/index.scss */
 .index-pics .pic-col-m {
   width: 353px;
 }
-/* line 215, ../sass/index.scss */
+/* line 210, ../sass/index.scss */
 .index-pics .pic-col-s {
   width: 287px;
 }
-/* line 218, ../sass/index.scss */
+/* line 213, ../sass/index.scss */
 .index-pics .pic-col-l {
   width: 460px;
 }
