@@ -1,4 +1,4 @@
-/* @import "compass"; */
+@import "compass";
 body, div, dl, dt, dd, ul, li, h1, h2, h3, h4, h5, h6, input, form, a, p, textarea {
 	margin: 0;
 	padding: 0;
@@ -20,7 +20,7 @@ img {
 	display: block;
 }
 
-.clearfix {
+/* .clearfix {
 	zoom: 1;
 }
 
@@ -30,8 +30,8 @@ img {
 	content: "";
 	visibility: hidden;
 	height: 0;
-}
-/* 不推荐使用自带清除浮动方法，因为内容增多时候容易造成不会自动换行导致内容被隐藏掉，无法显示需要溢出的元素 */
-/* .clearfix {
-	@include clearfix;
 } */
+
+.clearfix {
+	@include legacy-pie-clearfix;
+}

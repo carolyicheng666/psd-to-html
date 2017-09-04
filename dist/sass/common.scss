@@ -22,10 +22,8 @@
 			}
 		}
 		a {
-			color: #3b3b3b;
-			&:hover {
-				text-decoration: underline;
-			}
+			@include link-colors(#3b3b3b);
+			@include hover-link;
 		}
 	}
 }

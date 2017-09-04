@@ -1,5 +1,3 @@
-@charset "UTF-8";
-/* @import "compass"; */
 /* line 2, ../sass/reset.scss */
 body, div, dl, dt, dd, ul, li, h1, h2, h3, h4, h5, h6, input, form, a, p, textarea {
   margin: 0;
@@ -25,21 +23,27 @@ img {
   display: block;
 }
 
-/* line 23, ../sass/reset.scss */
-.clearfix {
-  zoom: 1;
-}
-
-/* line 27, ../sass/reset.scss */
-.clearfix:after {
-  display: block;
-  clear: both;
-  content: "";
-  visibility: hidden;
-  height: 0;
-}
-
-/* 不推荐使用自带清除浮动方法，因为内容增多时候容易造成不会自动换行导致内容被隐藏掉，无法显示需要溢出的元素 */
 /* .clearfix {
-	@include clearfix;
+	zoom: 1;
+}
+
+.clearfix:after {
+	display: block;
+	clear: both;
+	content: "";
+	visibility: hidden;
+	height: 0;
 } */
+/* line 35, ../sass/reset.scss */
+.clearfix {
+  *zoom: 1;
+}
+/* line 22, C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/general/_clearfix.scss */
+.clearfix:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  clear: both;
+  overflow: hidden;
+  visibility: hidden;
+}
