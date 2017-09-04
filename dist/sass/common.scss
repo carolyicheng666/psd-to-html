@@ -1,5 +1,4 @@
-@import "compass/css3";
-@import "compass/utilities";
+@import "compass";
 
 .public-header {
 	height: 110px;
@@ -7,8 +6,8 @@
 		@include float(left);
 		margin-top: 40px;
 		a {
-			width: 182px;
-			height: 54px;
+			width: image-width("index-header-logo.png");
+			height: image-height("index-header-logo.png");
 			@include background(url("../images/index-header-logo.png") no-repeat);
 		}
 	}
@@ -54,8 +53,8 @@
 		margin-right: 0;
 	}
 	.footer-logo {
-		width: 182px;
-		height: 55px;
+		width: image-width("index-footer-logo.png");
+		height: image-height("index-footer-logo.png");
 		margin: {
 			top: -10px;
 			bottom: 12px;

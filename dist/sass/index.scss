@@ -1,6 +1,4 @@
-@import "compass/css3";
-@import "compass/utilities";
-@import "compass/typography";
+@import "compass";
 @import "compass/layout";
 
 .index-banner {
@@ -9,7 +7,7 @@
 }
 
 .index-banner-bg {
-	height: 570px;
+	height: image-height("demo1.jpg");
 	overflow: hidden;
 	img {
 		margin: 0 auto;
@@ -18,7 +16,7 @@
 
 .index-banner-text {
 	@include stretch(200px, false, false, 50%);
-	margin-left: -388px;
+	margin-left: -(image-width("text-logo.png")/2);
 	.text-info {
 		margin-top: 17px;
 		text-align: center;
@@ -37,8 +35,8 @@
 }
 
 .text-logo {
-	width: 776px;
-	height: 117px;
+	width: image-width("text-logo.png");
+	height: image-height("text-logo.png");
 	@include background(url("../images/text-logo.png") no-repeat);
 }
 
@@ -113,8 +111,8 @@
 		color: #b7b7b7;
 		.icon {
 			@include inline-block;
-			width: 11px;
-			height: 7px;
+			width: image-width("index-menu-btn.png");
+			height: image-height("index-menu-btn.png");
 			margin-left: 10px;
 			@include background(url("../images/index-menu-btn.png") no-repeat);
 		}
@@ -169,11 +167,11 @@
 	}
 	.food-item {
 		@include float(left);
-		width: 230px;
+		width: image-width("../images/food1.jpg")-1;
 		margin-right: 60px;
 		.banner {
 			margin-bottom: 30px;
-			height: 202px;
+			height: image-height("../images/food1.jpg");
 		}
 		.name {
 			color: #555;
@@ -185,15 +183,17 @@
 		.star-bar {
 			font-size: 0;
 		}
+		$star-width: image-width("star.png");
+		$star-height: image-height("star.png")/2;
 		.star {
 			@include inline-block;
-			width: 12px;
-			height: 13px;
+			width: $star-width;
+			height: $star-height;
 			margin-right: 5px;
 			@include background(url("../images/star.png") no-repeat);
 		}
 		.nostar {
-			background-position: 0 -13px;
+			background-position: 0 (-$star-height);
 		}
 	}
 }
@@ -205,12 +205,12 @@
 		@include float(left);
 	}
 	.pic-col-m {
-		width: 353px;
+		width: image-width("food5.jpg");
 	}
 	.pic-col-s {
-		width: 287px;
+		width: image-width("food6.jpg");
 	}
 	.pic-col-l {
-		width: 460px;
+		width: image-width("food8.jpg");
 	}
 }

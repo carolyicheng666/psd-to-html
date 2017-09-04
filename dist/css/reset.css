@@ -1,34 +1,36 @@
-/* line 1, ../sass/reset.scss */
+@charset "UTF-8";
+/* @import "compass"; */
+/* line 2, ../sass/reset.scss */
 body, div, dl, dt, dd, ul, li, h1, h2, h3, h4, h5, h6, input, form, a, p, textarea {
   margin: 0;
   padding: 0;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-/* line 7, ../sass/reset.scss */
+/* line 8, ../sass/reset.scss */
 ol, ul, li {
   list-style: none;
 }
 
-/* line 11, ../sass/reset.scss */
+/* line 12, ../sass/reset.scss */
 a {
   text-decoration: none;
   display: block;
   color: #fff;
 }
 
-/* line 17, ../sass/reset.scss */
+/* line 18, ../sass/reset.scss */
 img {
   border: 0;
   display: block;
 }
 
-/* line 22, ../sass/reset.scss */
+/* line 23, ../sass/reset.scss */
 .clearfix {
   zoom: 1;
 }
 
-/* line 26, ../sass/reset.scss */
+/* line 27, ../sass/reset.scss */
 .clearfix:after {
   display: block;
   clear: both;
@@ -36,3 +38,8 @@ img {
   visibility: hidden;
   height: 0;
 }
+
+/* 不推荐使用自带清除浮动方法，因为内容增多时候容易造成不会自动换行导致内容被隐藏掉，无法显示需要溢出的元素 */
+/* .clearfix {
+	@include clearfix;
+} */
