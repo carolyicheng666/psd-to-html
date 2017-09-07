@@ -14,7 +14,12 @@ gulp.task('min-css', () =>
     .pipe(gulp.dest('./build/css'))
 );
 
-gulp.task('min-img', () =>
+/** ['min-css']
+* 表示'min-img'依赖于'min-css'
+* 即必须先执行完'min-css'，才能执行'min-img'
+* 若不指定该字段，则默认并行执行
+**/
+gulp.task('min-img', ['min-css'], () =>
     gulp.src('./dist/images/*')
     .pipe(imagemin({
         interlaced: true,
