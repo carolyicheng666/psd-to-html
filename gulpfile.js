@@ -3,6 +3,7 @@ var cleanCSS = require("gulp-clean-css"); //压缩css
 var uncss = require('gulp-uncss'); //清理无用css
 var concat = require('gulp-concat'); //合并文件
 var imagemin = require('gulp-imagemin'); //压缩图片
+/*var cssnano = require('gulp-cssnano');*/
 
 gulp.task('min-css', () =>
     gulp.src('./dist/css/*.css')
