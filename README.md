@@ -35,3 +35,9 @@ $ gulp
 
 Look! `build` floder appear! The project can work well!
 
+tips
+----
+
+- `gulp-clean-css` can more minify css than `gulp-cssnano`.
+- add `cache = false`, that can prevent compass from outputting `.sass-cache` floder.
+
