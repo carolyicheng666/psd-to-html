@@ -1,11 +1,25 @@
-CACHE MANIFEST  
-#v0.0.1 
-  
-CACHE:  
-build/css/index.min.css
+CACHE MANIFEST
+#v0.0.1
 
-NETWORK:  
-*  
-  
-FALLBACK:  
-index.html error.html  
+CACHE:
+build/css/index.min.css
+build/images/demo1.jpg
+build/images/food1.jpg
+build/images/food2.jpg
+build/images/food3.jpg
+build/images/food4.jpg
+build/images/food5.jpg
+build/images/food6.jpg
+build/images/food7.jpg
+build/images/food8.jpg
+build/images/index-footer-logo.png
+build/images/index-header-logo.png
+build/images/index-menu-btn.png
+build/images/star.png
+build/images/text-logo.png
+
+NETWORK:
+*
+
+FALLBACK:
+index.html error.html
