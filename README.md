@@ -2,16 +2,22 @@
 
 ## How to use
 
-First copy the repo into your disk. Delete the `build` floder.
+First copy the repo into your disk. 
 
 ```bash
-$ git clone git@github.com:carolyicheng666/psd-to-html.git
+$ git clone https://github.com/carolyicheng666/psd-to-html.git
 ```
 
 Then 
 
 ```bash
 $ npm install
+```
+
+you should delete the `build` floder or delete files in `build` floder, it has two ways: Manually delete or
+
+```bash
+$ gulp clean
 ```
 
 Second, you can build `sass` to `css`. If you learned sass, you can do this step. But if not, you can skip this step because I already did it for you.
