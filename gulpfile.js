@@ -4,7 +4,8 @@ var uncss = require('gulp-uncss'); //清理无用css
 var concat = require('gulp-concat'); //合并文件
 var imagemin = require('gulp-imagemin'); //压缩图片
 /*var cssnano = require('gulp-cssnano');*/
-var clean = require('gulp-clean');
+var clean = require('gulp-clean');//清理文件
+var pngquant = require('imagemin-pngquant');//深度压缩png图片
 
 gulp.task('min-css', () =>
     gulp.src('./dist/css/*.css')
@@ -27,7 +28,8 @@ gulp.task('min-img', ['min-css'], () =>
         interlaced: true,
         progressive: true,
         optimizationLevel: 5,
-        svgoPlugins: [{ removeViewBox: true }]
+        svgoPlugins: [{ removeViewBox: true }],
+        use: [pngquant()]
     }))
     .pipe(gulp.dest('./build/images'))
 );
