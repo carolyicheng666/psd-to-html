@@ -47,4 +47,11 @@ tips
 - `gulp-clean-css` can more minify css than `gulp-cssnano`.
 - add `cache = false`, that can prevent compass from outputting `.sass-cache` floder.
 - add `manifest`.
+- about `manifest`, if sever is tomcat, you should add in `conf/web.xml` files: 
+```xml
+<mime-mapping> 
+    <extension>manifest</extension> 
+    <mime-type>text/cache-manifest</mime-type> 
+</mime-mapping>
+```
 
