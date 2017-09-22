@@ -48,7 +48,7 @@ gulp.task('min-img', ['min-css'], () =>
 gulp.task('default', ['compass', 'min-css', 'min-img']);
 
 gulp.task('watch', () =>
-    gulp.watch(['./dist/*', './dist/**/*'], ['compass', 'min-css', 'min-img'])
+    gulp.watch('./dist/**/*', ['default'])
 );
 
 gulp.task('clean', () =>
