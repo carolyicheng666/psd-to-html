@@ -6,8 +6,19 @@ var imagemin = require('gulp-imagemin'); //压缩图片
 /*var cssnano = require('gulp-cssnano');*/
 var clean = require('gulp-clean');//清理文件
 var pngquant = require('imagemin-pngquant');//深度压缩png图片
+var compass = require('gulp-compass');//compass将sass编译成css
+var watch = require('gulp-watch');//热更新
 
-gulp.task('min-css', () =>
+gulp.task('compass', () =>
+    gulp.src('./dist/sass/*.scss')
+    .pipe(compass({
+      config_file: './config.rb',
+      css: './dist/css',
+      sass: './dist/sass'
+    }))
+);
+
+gulp.task('min-css', ['compass'], () =>
     gulp.src('./dist/css/*.css')
     .pipe(concat("index.min.css"))
     .pipe(uncss({
@@ -34,7 +45,11 @@ gulp.task('min-img', ['min-css'], () =>
     .pipe(gulp.dest('./build/images'))
 );
 
-gulp.task('default', ['min-css', 'min-img']);
+gulp.task('default', ['compass', 'min-css', 'min-img']);
+
+gulp.task('watch', () =>
+    gulp.watch(['./dist/*', './dist/**/*'], ['compass', 'min-css', 'min-img'])
+);
 
 gulp.task('clean', () =>
     gulp.src('./build/*', {read: false})

@@ -20,6 +20,7 @@ you should delete the `build` floder or delete files in `build` floder, it has t
 $ gulp clean
 ```
 
+<del>
 Second, you can build `sass` to `css`. If you learned sass, you can do this step. But if not, you can skip this step because I already did it for you.
 
 ```bash
@@ -32,6 +33,7 @@ Then
 ```bash
 $ compass compile
 ```
+</del>
 
 Last
 
@@ -54,4 +56,6 @@ tips
     <mime-type>text/cache-manifest</mime-type> 
 </mime-mapping>
 ```
+- add `gulp-compass`, so delete the second step.
+- add `gulp-watch`.
 
