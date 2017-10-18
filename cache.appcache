@@ -22,4 +22,4 @@ NETWORK:
 *
 
 FALLBACK:
-index.html error.html
+./build/index.html error.html
