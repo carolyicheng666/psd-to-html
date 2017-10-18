@@ -58,4 +58,12 @@ tips
 ```
 - add `gulp-compass`, so delete the second step.
 - add `gulp-watch`.
+- add `gulp-html-replace`, it can replace build blocks in HTML. Only put some blocks in HTML file:
 
+```html
+<!-- build:<name> -->
+Everything here will be replaced
+<!-- endbuild -->
+```
+
+The annotation is very important, if you write without it, the plug-in can't work well.
