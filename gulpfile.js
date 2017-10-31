@@ -10,6 +10,8 @@ var compass = require('gulp-compass');/*compass将sass编译成css*/
 var watch = require('gulp-watch');/*热更新*/
 var htmlreplace = require('gulp-html-replace');/*依赖加载文件替换*/
 
+var browserSync = require('browser-sync').create();/*浏览器同步测试*/
+
 gulp.task('compass', () =>
     gulp.src('./dist/sass/*.scss')
     .pipe(compass({
@@ -56,11 +58,19 @@ gulp.task('html', ['min-img'], () =>
 
 gulp.task('default', ['compass', 'min-css', 'min-img', 'html']);
 
-gulp.task('watch', () =>
-    gulp.watch('./dist/**/*', ['default'])
-);
+gulp.task('watch', ['default'], () => {
+    browserSync.init({
+        server: './'
+    })
+    gulp.watch(['./dist/*', './dist/**/*'], ['reload'])
+});
 
 gulp.task('clean', () =>
     gulp.src('./build/*', {read: false})
     .pipe(clean())
 );
+
+gulp.task('reload', ['default'], () =>
+    browserSync.reload()
+);
+
