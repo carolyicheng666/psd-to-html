@@ -46,19 +46,19 @@ Look! `build` floder appear! The project can work well!
 tips
 ----
 
-- `gulp-clean-css` can more minify css than `gulp-cssnano`.
-- add `cache = false`, that can prevent compass from outputting `.sass-cache` floder.
-- add `manifest`.
-- about `manifest`, if sever is tomcat, you should add in `conf/web.xml` files: 
+1. `gulp-clean-css` can more minify css than `gulp-cssnano`.
+2. add `cache = false`, that can prevent compass from outputting `.sass-cache` floder.
+3. add `manifest`.
+4. about `manifest`, if sever is tomcat, you should add in `conf/web.xml` files: 
 ```xml
 <mime-mapping> 
     <extension>manifest</extension> 
     <mime-type>text/cache-manifest</mime-type> 
 </mime-mapping>
 ```
-- add `gulp-compass`, so delete the second step.
-- add `gulp-watch`.
-- add `gulp-html-replace`, it can replace build blocks in HTML. Only put some blocks in HTML file:
+5. add `gulp-compass`, so delete the second step.
+6. add `gulp-watch`.
+7. add `gulp-html-replace`, it can replace build blocks in HTML. Only put some blocks in HTML file:
 
 ```html
 <!-- build:<name> -->
@@ -67,3 +67,5 @@ Everything here will be replaced
 ```
 
 The annotation is very important, if you write without it, the plug-in can't work well.
+
+8. add `browser-sync`, it can time-saving synchronised browser testing.
