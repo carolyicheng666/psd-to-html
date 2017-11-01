@@ -1,4 +1,4 @@
-(function($) {
+(function() {
 	"use strict";
 
 	window.sr = ScrollReveal();
@@ -14,4 +14,4 @@
     distance: '0px',
     reset: true
   }, 100);
-})(jQuery);
+})();
