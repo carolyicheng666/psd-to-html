@@ -69,3 +69,4 @@ Everything here will be replaced
 The annotation is very important, if you write without it, the plug-in can't work well.
 
 8. add `browser-sync`, it can time-saving synchronised browser testing.
+9. add `scrollreveal`, easy srcoll animations for web and mobile browsers. [learn how to use](https://github.com/jlmakes/scrollreveal)

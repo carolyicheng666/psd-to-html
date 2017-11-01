@@ -12,6 +12,8 @@ var htmlreplace = require('gulp-html-replace');/*依赖加载文件替换*/
 
 var browserSync = require('browser-sync').create();/*浏览器同步测试*/
 
+var uglify = require("gulp-uglify");/*压缩js*/
+
 gulp.task('compass', () =>
     gulp.src('./dist/sass/*.scss')
     .pipe(compass({
@@ -48,15 +50,23 @@ gulp.task('min-img', ['min-css'], () =>
     .pipe(gulp.dest('./build/images'))
 );
 
-gulp.task('html', ['min-img'], () =>
+gulp.task('min-js', ['min-img'], () =>
+    gulp.src(['./dist/js/jquery.min.js', './dist/js/scrollreveal.min.js', './dist/js/index.js'])
+    .pipe(concat("index.min.js"))
+    .pipe(uglify())
+    .pipe(gulp.dest('./build/js'))
+);
+
+gulp.task('html', ['min-js'], () =>
   gulp.src('./dist/index.html')
     .pipe(htmlreplace({
-        'css': './css/index.min.css'
+        'css': './css/index.min.css',
+        'js': './js/index.min.js'
     }))
     .pipe(gulp.dest('./build'))
 );
 
-gulp.task('default', ['compass', 'min-css', 'min-img', 'html']);
+gulp.task('default', ['compass', 'min-css', 'min-img', 'min-js', 'html']);
 
 gulp.task('watch', ['default'], () => {
     browserSync.init({
