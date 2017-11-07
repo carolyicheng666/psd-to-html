@@ -56,7 +56,9 @@ tips
     <mime-type>text/cache-manifest</mime-type> 
 </mime-mapping>
 ```
+
 due to `manifest` should run with server, I write it at previous line by annotation.
+
 5. add `gulp-compass`, so delete the second step.
 6. add `gulp-watch`.
 7. add `gulp-html-replace`, it can replace build blocks in HTML. Only put some blocks in HTML file:
