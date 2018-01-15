@@ -59,7 +59,7 @@ tips
 
 due to `manifest` should run with server, I write it at previous line by annotation.
 
-5. add `gulp-compass`, so delete the second step.
+<del>5. add `gulp-compass`, so delete the second step.</del>
 6. add `gulp-watch`.
 7. add `gulp-html-replace`, it can replace build blocks in HTML. Only put some blocks in HTML file:
 
@@ -73,3 +73,5 @@ The annotation is very important, if you write without it, the plug-in can't wor
 
 8. add `browser-sync`, it can time-saving synchronised browser testing.
 9. add `scrollreveal`, easy srcoll animations for web and mobile browsers. [learn how to use](https://github.com/jlmakes/scrollreveal)
+
+10. about `tips 5`, compass isn't update since 2014, so I choose to use `postcss + sass + autoprefixer` to replace it. I retain the files about the compass, you can compare the differences of them.

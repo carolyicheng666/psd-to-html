@@ -1,30 +1,29 @@
+@import "compass";
+
 .public-header {
 	height: 110px;
 	.header-logo {
-		float: left;
+		@include float(left);
 		margin-top: 40px;
 		a {
-			width: 181px;
-  		height: 54px;
-			background: url("../images/index-header-logo.png") no-repeat;
+			width: image-width("index-header-logo.png");
+			height: image-height("index-header-logo.png");
+			@include background(url("../images/index-header-logo.png") no-repeat);
 		}
 	}
 	.header-nav {
-		float: right;
+		@include float(right);
 		font-size: 14px;
 		.item {
-			float: left;
+			@include float(left);
 			margin: {
 				top: 44px;
 				left: 50px;
 			}
 		}
 		a {
-			color: #3b3b3b;
-			text-decoration: none;
-			&:hover, &:focus {
-				text-decoration: underline;
-			}
+			@include link-colors(#3b3b3b);
+			@include hover-link;
 		}
 	}
 }
@@ -42,7 +41,7 @@
 	background: #3b3b3b;
 	.footer-col {
 		width: 230px;
-		float: left;
+		@include float(left);
 		margin-right: 60px;
 		font-size: 16px;
 		color: #fff;
@@ -52,12 +51,12 @@
 		margin-right: 0;
 	}
 	.footer-logo {
-		width: 182px;
-  	height: 55px;
+		width: image-width("index-footer-logo.png");
+		height: image-height("index-footer-logo.png");
 		margin: {
 			top: -10px;
 			bottom: 12px;
 		}
-		background: url("../images/index-footer-logo.png") no-repeat;
+		@include background(url("../images/index-footer-logo.png") no-repeat);
 	}
 }

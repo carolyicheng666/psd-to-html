@@ -1,10 +1,13 @@
+@import "compass";
+@import "compass/layout";
+
 .index-banner {
 	position: relative;
 	background: #b3b3b3;
 }
 
 .index-banner-bg {
-	height: 570px;
+	height: image-height("demo1.jpg");
 	overflow: hidden;
 	img {
 		margin: 0 auto;
@@ -12,16 +15,14 @@
 }
 
 .index-banner-text {
-	position: absolute;
-  top: 200px;
-  left: 50%;
-	margin-left: -388px;
+	@include stretch(200px, false, false, 50%);
+	margin-left: -(image-width("text-logo.png")/2);
 	.text-info {
 		margin-top: 17px;
 		text-align: center;
 		color: #fff;
 		.line {
-			display: inline-block;
+			@include inline-block;
 			width: 40px;
 			border-top: 1px solid #fff;
 			/* vertical-align: middle; */
@@ -34,18 +35,16 @@
 }
 
 .text-logo {
-	width: 776px;
-  height: 117px;
-  background: url("../images/text-logo.png") no-repeat;
+	width: image-width("text-logo.png");
+	height: image-height("text-logo.png");
+	@include background(url("../images/text-logo.png") no-repeat);
 }
 
 .index-menu {
 	position: relative;
 	border-top: 4px solid #f34949;
 	.menu-tips {
-		position: absolute;
-	  top: 0;
-	  left: 50%;
+		@include stretch(0, false, false, 50%);
 		margin-left: -78px;
 		width: 156px;
 		height: 75px;
@@ -54,9 +53,7 @@
 		color: #fff;
 		background: #f34949;
 		&:after {
-			position: absolute;
-		  bottom: 0;
-		  left: 0;
+			@include stretch(false, false, 0, 0);
 			content: '';
 			width: 0;
 			height: 0;
@@ -74,30 +71,28 @@
 		}
 	}
 	.menu-item {
-		float: left;
+		@include float(left);
 		width: 520px;
 		margin: {
 			right: 60px;
 			bottom: 56px;
 		}
 		.title {
-			float: left;
+			@include float(left);
 		}
 		.line {
-			float: left;
+			@include float(left);
 			margin-top: 10px;
 			width: 192px;
 			border-top: 1px solid #e3e1e1;
 		}
 		.price {
-			float: right;
+			@include float(right);
 		}
 		.title {
 			width: 230px;
 			color: #555;
-			white-space: nowrap;
-  		overflow: hidden;
-  		text-overflow: ellipsis;
+			@include ellipsis;
 		}
 		.comment {
 			margin-top: 4px;
@@ -115,11 +110,11 @@
 		line-height: 32px;
 		color: #b7b7b7;
 		.icon {
-			display: inline-block;
-			width: 11px;
-  		height: 7px;
+			@include inline-block;
+			width: image-width("index-menu-btn.png");
+			height: image-height("index-menu-btn.png");
 			margin-left: 10px;
-			background: url("../images/index-menu-btn.png") no-repeat;
+			@include background(url("../images/index-menu-btn.png") no-repeat);
 		}
 	}
 }
@@ -130,7 +125,7 @@
 
 .index-panel-header {
 	h3 {
-		float: left;
+		@include float(left);
 		margin-right: 48px;
 		font: {
 			size: 20px;
@@ -139,22 +134,22 @@
 		color: #3b3b3b;
 	}
 	.line {
-		float: left;
+		@include float(left);
 		margin-top: 10px;
 		width: 200px;
 		border-top: 1px solid #e5e3e3;
 	}
 	.btn-group {
 		font-size: 0;
-		float: right;
+		@include float(right);
 	}
 	.btn {
-		display: inline-block;
+		@include inline-block;
 		margin-left: 11px;
 		width: 9px;
 		height: 9px;
 		background: #dedede;
-		border-radius: 50%;
+		@include border-radius(50%);
 	}
 	.active {
 		background: #9b9b9b;
@@ -171,32 +166,34 @@
 		width: 1160px;
 	}
 	.food-item {
-		float: left;
-		width: 230px;
+		@include float(left);
+		width: image-width("../images/food1.jpg")-1;
 		margin-right: 60px;
 		.banner {
 			margin-bottom: 30px;
-			height: 202px;
+			height: image-height("../images/food1.jpg");
 		}
 		.name {
 			color: #555;
 			margin-bottom: 10px;
 		}
 		.price {
-			float: right;
+			@include float(right);
 		}
 		.star-bar {
 			font-size: 0;
 		}
+		$star-width: image-width("star.png");
+		$star-height: image-height("star.png")/2;
 		.star {
-			display: inline-block;
-			width: 12px;
-  		height: 13px;
+			@include inline-block;
+			width: $star-width;
+			height: $star-height;
 			margin-right: 5px;
-			background: url("../images/star.png") no-repeat;
+			@include background(url("../images/star.png") no-repeat);
 		}
 		.nostar {
-			background-position: 0 -13px;
+			background-position: 0 (-$star-height);
 		}
 	}
 }
@@ -205,15 +202,15 @@
 	height: 380px;
 	overflow: hidden;
 	.pic-col {
-		float: left;
+		@include float(left);
 	}
 	.pic-col-m {
-		width: 353px;
+		width: image-width("food5.jpg");
 	}
 	.pic-col-s {
-		width: 287px;
+		width: image-width("food6.jpg");
 	}
 	.pic-col-l {
-		width: 460px;
+		width: image-width("food8.jpg");
 	}
 }

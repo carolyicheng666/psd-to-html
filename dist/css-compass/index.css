@@ -7,7 +7,6 @@
   height: 570px;
   overflow: hidden;
 }
-
 .index-banner-bg img {
   margin: 0 auto;
 }
@@ -18,21 +17,22 @@
   left: 50%;
   margin-left: -388px;
 }
-
 .index-banner-text .text-info {
   margin-top: 17px;
   text-align: center;
   color: #fff;
 }
-
 .index-banner-text .text-info .line {
   display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
   width: 40px;
   border-top: 1px solid #fff;
   /* vertical-align: middle; */
   *margin-top: 22px;
 }
-
 .index-banner-text .text-info .txt {
   margin: 0 26px;
 }
@@ -47,7 +47,6 @@
   position: relative;
   border-top: 4px solid #f34949;
 }
-
 .index-menu .menu-tips {
   position: absolute;
   top: 0;
@@ -60,7 +59,6 @@
   color: #fff;
   background: #f34949;
 }
-
 .index-menu .menu-tips:after {
   position: absolute;
   bottom: 0;
@@ -72,53 +70,46 @@
   border-right: 78px solid transparent;
   border-bottom: 10px solid #fff;
 }
-
 .index-menu .menu-list {
   margin-top: 150px;
   color: #555;
   overflow: hidden;
 }
-
 .index-menu .menu-list ul {
   width: 1160px;
 }
-
 .index-menu .menu-item {
   float: left;
   width: 520px;
   margin-right: 60px;
   margin-bottom: 56px;
 }
-
 .index-menu .menu-item .title {
   float: left;
 }
-
 .index-menu .menu-item .line {
   float: left;
   margin-top: 10px;
   width: 192px;
   border-top: 1px solid #e3e1e1;
 }
-
 .index-menu .menu-item .price {
   float: right;
 }
-
 .index-menu .menu-item .title {
   width: 230px;
   color: #555;
   white-space: nowrap;
   overflow: hidden;
+  -ms-text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
   text-overflow: ellipsis;
 }
-
 .index-menu .menu-item .comment {
   margin-top: 4px;
   color: #b7b7b7;
   font-size: 12px;
 }
-
 .index-menu .menu-more-btn {
   margin: 0 auto;
   width: 114px;
@@ -129,9 +120,12 @@
   line-height: 32px;
   color: #b7b7b7;
 }
-
 .index-menu .menu-more-btn .icon {
   display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
   width: 11px;
   height: 7px;
   margin-left: 10px;
@@ -149,28 +143,30 @@
   font-weight: normal;
   color: #3b3b3b;
 }
-
 .index-panel-header .line {
   float: left;
   margin-top: 10px;
   width: 200px;
   border-top: 1px solid #e5e3e3;
 }
-
 .index-panel-header .btn-group {
   font-size: 0;
   float: right;
 }
-
 .index-panel-header .btn {
   display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
   margin-left: 11px;
   width: 9px;
   height: 9px;
   background: #dedede;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
   border-radius: 50%;
 }
-
 .index-panel-header .active {
   background: #9b9b9b;
 }
@@ -182,43 +178,39 @@
 .index-food-list {
   overflow: hidden;
 }
-
 .index-food-list ul {
   width: 1160px;
 }
-
 .index-food-list .food-item {
   float: left;
   width: 230px;
   margin-right: 60px;
 }
-
 .index-food-list .food-item .banner {
   margin-bottom: 30px;
   height: 202px;
 }
-
 .index-food-list .food-item .name {
   color: #555;
   margin-bottom: 10px;
 }
-
 .index-food-list .food-item .price {
   float: right;
 }
-
 .index-food-list .food-item .star-bar {
   font-size: 0;
 }
-
 .index-food-list .food-item .star {
   display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
   width: 12px;
   height: 13px;
   margin-right: 5px;
   background: url("../images/star.png") no-repeat;
 }
-
 .index-food-list .food-item .nostar {
   background-position: 0 -13px;
 }
@@ -227,19 +219,15 @@
   height: 380px;
   overflow: hidden;
 }
-
 .index-pics .pic-col {
   float: left;
 }
-
 .index-pics .pic-col-m {
   width: 353px;
 }
-
 .index-pics .pic-col-s {
   width: 287px;
 }
-
 .index-pics .pic-col-l {
   width: 460px;
 }

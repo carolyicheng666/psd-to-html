@@ -19,14 +19,25 @@ img {
   display: block;
 }
 
-.clearfix {
-  zoom: 1;
+/* .clearfix {
+	zoom: 1;
 }
 
 .clearfix:after {
+	display: block;
+	clear: both;
+	content: "";
+	visibility: hidden;
+	height: 0;
+} */
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:after {
+  content: "\0020";
   display: block;
-  clear: both;
-  content: "";
-  visibility: hidden;
   height: 0;
+  clear: both;
+  overflow: hidden;
+  visibility: hidden;
 }

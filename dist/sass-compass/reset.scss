@@ -1,3 +1,4 @@
+@import "compass";
 body, div, dl, dt, dd, ul, li, h1, h2, h3, h4, h5, h6, input, form, a, p, textarea {
 	margin: 0;
 	padding: 0;
@@ -19,7 +20,7 @@ img {
 	display: block;
 }
 
-.clearfix {
+/* .clearfix {
 	zoom: 1;
 }
 
@@ -29,4 +30,8 @@ img {
 	content: "";
 	visibility: hidden;
 	height: 0;
+} */
+
+.clearfix {
+	@include legacy-pie-clearfix;
 }

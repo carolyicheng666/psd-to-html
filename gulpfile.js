@@ -7,6 +7,12 @@ var imagemin = require('gulp-imagemin'); /*压缩图片*/
 var clean = require('gulp-clean');/*清理文件*/
 var pngquant = require('imagemin-pngquant');/*深度压缩png图片*/
 var compass = require('gulp-compass');/*compass将sass编译成css*/
+
+/*弃用compass, 改用sass+autoprefixer模式，并集成于postcss中*/
+var sass = require('gulp-sass');
+var postcss = require('gulp-postcss');
+var autoprefixer = require('autoprefixer');
+
 var watch = require('gulp-watch');/*热更新*/
 var htmlreplace = require('gulp-html-replace');/*依赖加载文件替换*/
 
@@ -23,7 +29,17 @@ gulp.task('compass', () =>
     }))
 );
 
-gulp.task('min-css', ['compass'], () =>
+gulp.task('sass', function() {
+  var plugins = [
+    autoprefixer({ browsers: ['last 2 versions'], cascade: false}),
+  ];
+  return gulp.src('./dist/sass/*.scss')
+    .pipe(sass({outputStyle: 'expanded'}))
+    .pipe(postcss(plugins))
+    .pipe(gulp.dest('./dist/css'))
+});
+
+gulp.task('min-css', ['sass'], () =>
     gulp.src('./dist/css/*.css')
     .pipe(concat("index.min.css"))
     .pipe(uncss({
@@ -66,7 +82,7 @@ gulp.task('html', ['min-js'], () =>
     .pipe(gulp.dest('./build'))
 );
 
-gulp.task('default', ['compass', 'min-css', 'min-img', 'min-js', 'html']);
+gulp.task('default', ['sass', 'min-css', 'min-img', 'min-js', 'html']);
 
 gulp.task('watch', ['default'], () => {
     browserSync.init({
