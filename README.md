@@ -75,3 +75,14 @@ Everything here will be replaced
 9. add `scrollreveal`, easy srcoll animations for web and mobile browsers. [learn how to use](https://github.com/jlmakes/scrollreveal)
 
 10. about `tips 5`, compass isn't update since 2014, so I choose to use `postcss + sass + autoprefixer` to replace it. I retain the files about the compass, you can compare the differences of them.
+
+
+
+## Webpack
+
+I add Webpack. You can see the files `webpack.config.js` if you have some basic knowledge about Webpack. Run
+```bash
+$ npm start
+```
+You can build to the floder `webpack-build`.
+Emmm, Unfortunately, I won't use `es6`, so I haven't build with the floder `dist/js`. Maybe you can try it. If you do it successfully, tell me first please, thank you!
