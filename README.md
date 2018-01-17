@@ -88,4 +88,3 @@ I add Webpack. You can see the files `webpack.config.js` if you have some basic 
 $ npm start
 ```
 You can build to the floder `webpack-build`.
-Emmm, Unfortunately, I won't use `es6`, so I haven't build with the floder `dist/js`. Maybe you can try it. If you do it successfully, tell me first please, thank you!

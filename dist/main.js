@@ -1,9 +1,23 @@
-/*import $ from 'jquery';*/
-/*import module1 from './module1.js';*/
-
 import './sass/reset.scss';
 import './sass/common.scss';
 import './sass/index.scss';
 
-/*$("body").css('backgroundColor', '#ccc');
-module1();*/
+import ScrollReveal from './js/scrollreveal.min.js';
+
+(function() {
+  "use strict";
+
+  window.sr = ScrollReveal();
+  sr.reveal('.banner', {
+    duration: 600,
+    scale: 0.3,
+    distance: '0px',
+    reset: true
+  }, 200);
+  sr.reveal('.sr-foods', {
+    duration: 600,
+    scale: 0.3,
+    distance: '0px',
+    reset: true
+  }, 100);
+})();

@@ -5,11 +5,13 @@ const CleanWebpackPlugin = require("clean-webpack-plugin");
 
 module.exports = {
   entry: {
+    //通过将公共模块拆出来，最终合成的文件能够在最开始的时候加载一次，便存起来到缓存中供后续使用。
+    vendor: __dirname + "/dist/js/scrollreveal.min.js",//公共模块
     main: __dirname + "/dist/main.js"
   },
   output: {
     path: __dirname + "/webpack-build",//打包后的文件存放的地方
-    filename: "[name]-[hash].js"//打包后输出文件的文件名
+    filename: "[name]-[chunkhash].js"//打包后输出文件的文件名
   },
   module: {
     rules: [
@@ -36,6 +38,9 @@ module.exports = {
   },
   plugins: [
     new webpack.BannerPlugin('版权所有，翻版必究'),
+    new webpack.optimize.CommonsChunkPlugin({
+      names: ['vendor', 'manifest']
+    }),
     new CleanWebpackPlugin(['webpack-build'], { verbose: true }),
     new webpack.optimize.UglifyJsPlugin(),
     new HtmlWebpackPlugin({
