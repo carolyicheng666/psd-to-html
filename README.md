@@ -1,5 +1,8 @@
 ﻿This is a simple demo of psd-to-html.
 
+psd url: [psd](https://pan.baidu.com/s/1dHlMAS5)  
+password: jhqc
+
 ## How to use
 
 First copy the repo into your disk. 
