@@ -85,6 +85,12 @@ Everything here will be replaced
 
 I add Webpack. You can see the files `webpack.config.js` if you have some basic knowledge about Webpack. Run
 ```bash
-$ npm start
+$ npm run build
 ```
 You can build to the floder `webpack-build`.
+
+Run
+```bash
+$ npm start
+```
+Visit [http://127.0.0.1:8080](http://127.0.0.1:8080) with your browser.
