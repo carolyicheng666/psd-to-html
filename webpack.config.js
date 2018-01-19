@@ -30,8 +30,8 @@ module.exports = {
         use: ['file-loader?name=images/[hash].[ext]']
       },
       {
-        test: /\.html$/,
-        loader: 'html-withimg-loader'
+        test: /\.(html|ejs)$/,
+        loader: 'html-loader'
       }
     ]
   },
@@ -44,7 +44,9 @@ module.exports = {
     new CleanWebpackPlugin(['webpack-build/*.*'], { verbose: true }),
     new webpack.optimize.UglifyJsPlugin(),
     new HtmlWebpackPlugin({
-      template: __dirname + "/dist/index.tmpl.html"
+      filename: 'index.html',
+      title: 'this is psd-to-html',
+      template: path.resolve(__dirname, "dist/index.tmpl.ejs")
     })
   ],
   resolve: {
