@@ -1,8 +1,8 @@
-import './sass/reset.scss';
-import './sass/common.scss';
-import './sass/index.scss';
+import 'Style/reset.scss';
+import 'Style/common.scss';
+import 'Style/index.scss';
 
-import ScrollReveal from './js/scrollreveal.min.js';
+import ScrollReveal from 'Js/scrollreveal.min.js';
 
 (function() {
   "use strict";

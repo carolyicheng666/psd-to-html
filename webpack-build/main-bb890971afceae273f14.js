@@ -1,2 +1,0 @@
-/*! 版权所有，翻版必究 */
-webpackJsonp([0],[,function(n,e,r){"use strict";Object.defineProperty(e,"__esModule",{value:!0});var s=r(2),t=(r.n(s),r(3)),o=(r.n(t),r(4)),a=(r.n(o),r(0)),c=r.n(a);!function(){window.sr=c()(),sr.reveal(".banner",{duration:600,scale:.3,distance:"0px",reset:!0},200),sr.reveal(".sr-foods",{duration:600,scale:.3,distance:"0px",reset:!0},100)}()},function(n,e){},function(n,e){},function(n,e){}],[1]);

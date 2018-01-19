@@ -6,6 +6,7 @@ const CleanWebpackPlugin = require("clean-webpack-plugin");
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 module.exports = {
+  devtool: 'eval-source-map',
   entry: {
     //通过将公共模块拆出来，最终合成的文件能够在最开始的时候加载一次，便存起来到缓存中供后续使用。
     vendor: __dirname + "/dist/js/scrollreveal.min.js",//公共模块
@@ -46,6 +47,12 @@ module.exports = {
       template: __dirname + "/dist/index.tmpl.html"
     })
   ],
+  resolve: {
+    alias: {
+      Js: path.resolve(__dirname, 'dist/js'),
+      Style: path.resolve(__dirname, 'dist/sass')
+    }
+  },
   devServer: {
     contentBase: './webpack-build',
     host: '127.0.0.1',
