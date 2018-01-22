@@ -22,7 +22,16 @@ module.exports = {
         test: /\.scss$/,
         use: ExtractTextPlugin.extract({
           fallback: 'style-loader',
-          use: ['css-loader', 'postcss-loader', 'sass-loader']
+          use: [
+            {
+              loader: 'css-loader',
+              options: {
+                minimize: true
+              }  
+            },
+            'postcss-loader', 
+            'sass-loader'
+          ]
         })
       },
       {
@@ -42,7 +51,16 @@ module.exports = {
     new HtmlWebpackPlugin({
       filename: 'index.html',
       title: 'this is psd-to-html',
-      template: path.resolve(__dirname, "dist/index.tmpl.html")
+      template: path.resolve(__dirname, "dist/index.tmpl.html"),
+      minify: {
+        removeAttributeQuotes: true,
+        collapseWhitespace: true,
+        html5: true,
+        minifyCSS: true,
+        removeComments: true,
+        removeEmptyAttributes: true
+      },
+      hash: true
     })
   ],
   resolve: {
