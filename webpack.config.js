@@ -28,10 +28,6 @@ module.exports = {
       {
         test: /\.(png|svg|jpg|gif)$/,
         use: ['file-loader?name=images/[hash].[ext]']
-      },
-      {
-        test: /\.(html|ejs)$/,
-        loader: 'html-loader'
       }
     ]
   },
@@ -46,7 +42,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       filename: 'index.html',
       title: 'this is psd-to-html',
-      template: path.resolve(__dirname, "dist/index.tmpl.ejs")
+      template: path.resolve(__dirname, "dist/index.tmpl.html")
     })
   ],
   resolve: {
