@@ -1,0 +1,217 @@
+<template>
+  <div id="app">
+    <div class="public-header">
+      <div class="public-container clearfix">
+        <div class="header-logo">
+          <a href=""></a>
+        </div>
+        <ul class="header-nav">
+          <li class="item"><a href="">Our Story</a></li>
+          <li class="item"><a href="">Menu</a></li>
+          <li class="item"><a href="">Reservations</a></li>
+          <li class="item"><a href="">News</a></li>
+          <li class="item"><a href="">Rviews</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="index-banner">
+      <div class="index-banner-bg">
+        <img src="./images/demo1.jpg" alt="banner">
+      </div>
+      <div class="index-banner-text">
+        <div class="text-logo"></div>
+        <p class="text-info">
+          <i class="line line-l"></i>
+          <span class="txt">resto restaurant home page website template</span>
+          <i class="line line-r"></i>
+        </p>
+      </div>
+    </div>
+    <div class="index-menu">
+      <div class="menu-tips">The Menu</div>
+      <div class="public-container menu-list">
+        <ul class="clearfix">
+          <li class="menu-item clearfix">
+            <a class="title">
+              <h4>Voluptate cillum fugiat.</h4>
+              <p class="comment">Cheese, tomato, mushrooms, onions.</p>
+            </a>
+            <div class="line"></div>
+            <div class="price">$50</div>
+          </li>
+          <li class="menu-item clearfix">
+            <a class="title">
+              <h4>Voluptate cillum fugiat.</h4>
+              <p class="comment">Cheese, tomato, mushrooms, onions.</p>
+            </a>
+            <div class="line"></div>
+            <div class="price">$50</div>
+          </li>
+          <li class="menu-item clearfix">
+            <a class="title">
+              <h4>Voluptate cillum fugiat.</h4>
+              <p class="comment">Cheese, tomato, mushrooms, onions.</p>
+            </a>
+            <div class="line"></div>
+            <div class="price">$50</div>
+          </li>
+          <li class="menu-item clearfix">
+            <a class="title">
+              <h4>Voluptate cillum fugiat.</h4>
+              <p class="comment">Cheese, tomato, mushrooms, onions.</p>
+            </a>
+            <div class="line"></div>
+            <div class="price">$50</div>
+          </li>
+          <li class="menu-item clearfix">
+            <a class="title">
+              <h4>Voluptate cillum fugiat.</h4>
+              <p class="comment">Cheese, tomato, mushrooms, onions.</p>
+            </a>
+            <div class="line"></div>
+            <div class="price">$50</div>
+          </li>
+          <li class="menu-item clearfix">
+            <a class="title">
+              <h4>Voluptate cillum fugiat.</h4>
+              <p class="comment">Cheese, tomato, mushrooms, onions.</p>
+            </a>
+            <div class="line"></div>
+            <div class="price">$50</div>
+          </li>
+          <li class="menu-item clearfix">
+            <a class="title">
+              <h4>Voluptate cillum fugiat.</h4>
+              <p class="comment">Cheese, tomato, mushrooms, onions.</p>
+            </a>
+            <div class="line"></div>
+            <div class="price">$50</div>
+          </li>
+          <li class="menu-item clearfix">
+            <a class="title">
+              <h4>Voluptate cillum fugiat.</h4>
+              <p class="comment">Cheese, tomato, mushrooms, onions.</p>
+            </a>
+            <div class="line"></div>
+            <div class="price">$50</div>
+          </li>
+        </ul>
+      </div>
+      <a href="" class="menu-more-btn">
+        load more 
+        <span>|</span>
+        <span class="icon"></span>
+      </a>
+    </div>
+    <div class="public-container index-panel">
+      <div class="index-panel-header clearfix">
+        <h3>Featured Dishes</h3>
+        <div class="line"></div>
+        <div class="btn-group">
+          <a href="" class="btn"></a>
+          <a href="" class="btn active"></a>
+          <a href="" class="btn"></a>
+          <a href="" class="btn"></a>
+        </div>
+      </div>
+      <div class="index-panel-body index-food-list">
+        <ul class="clearfix">
+          <li class="food-item">
+            <a href="">
+              <img class="banner" src="./images/food1.jpg">
+              <div class="name"><span class="price">$30</span>Fugiat nulla sint</div>
+              <div class="star-bar">
+                <span class="star"></span>
+                <span class="star"></span>
+                <span class="star"></span>
+                <span class="star"></span>
+                <span class="star nostar"></span>
+              </div>
+            </a>
+          </li>
+          <li class="food-item">
+            <a href="">
+              <img class="banner" src="./images/food2.jpg">
+              <div class="name"><span class="price">$24</span>Daute irure dolor</div>
+              <div class="star-bar">
+                <span class="star"></span>
+                <span class="star"></span>
+                <span class="star"></span>
+                <span class="star nostar"></span>
+                <span class="star nostar"></span>
+              </div>
+            </a>
+          </li>
+          <li class="food-item">
+            <a href="">
+              <img class="banner" src="./images/food3.jpg">
+              <div class="name"><span class="price">$60</span>Officia deserunt mollit</div>
+              <div class="star-bar">
+                <span class="star"></span>
+                <span class="star"></span>
+                <span class="star"></span>
+                <span class="star"></span>
+                <span class="star"></span>
+              </div>
+            </a>
+          </li>
+          <li class="food-item">
+            <a href="">
+              <img class="banner" src="./images/food4.jpg">
+              <div class="name"><span class="price">$17</span>Pim minim veniam</div>
+              <div class="star-bar">
+                <span class="star"></span>
+                <span class="star"></span>
+                <span class="star"></span>
+                <span class="star"></span>
+                <span class="star nostar"></span>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="public-container index-panel">
+      <div class="index-panel-header clearfix">
+        <h3>The Gallery</h3>
+        <div class="line"></div>
+      </div>
+      <div class="index-panel-body index-pics">
+        <a class="pic-col pic-col-m"><img class="sr-foods" src="./images/food5.jpg"></a>
+        <div class="pic-col pic-col-s">
+          <a class="pic-row"><img class="sr-foods" src="./images/food6.jpg"></a>
+          <a class="pic-row"><img class="sr-foods" src="./images/food7.jpg"></a>
+        </div>
+        <a class="pic-col pic-col-l"><img class="sr-foods" src="./images/food8.jpg"></a>
+      </div>
+    </div>
+    <div class="public-footer">
+      <div class="public-container">
+        <div class="footer-col">
+          <p>New York Restaurant<br>3926 Anmoore Road<br>New York, NY 10014<a tel="">718-749-1714</a></p>
+        </div>
+        <div class="footer-col">
+          <p>France Restaurant<br>68, rue  de la Couronne<br>75002 PARIS<br>02.94.23.69.56</p>
+        </div>
+        <div class="footer-col">
+          <a href="">Blog</a>
+          <a href="">Careers</a>
+          <a href="">Privacy Policy</a>
+          <a>Contact</a>
+        </div>
+        <div class="footer-col footer-col-last">
+          <div class="footer-logo"></div>
+          <div class="foot-info">&copy; All Rights Reserved 2014.<br>Find  More at Pixelhint.com</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+<script>
+  
+</script>
+<style lang="scss">
+  @import './sass/reset.scss';
+  @import './sass/common.scss';
+  @import './sass/index.scss';
+</style>

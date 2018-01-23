@@ -1,23 +1,11 @@
-import 'Style/reset.scss';
-import 'Style/common.scss';
-import 'Style/index.scss';
+import Vue from 'vue'
+/*import ElementUI from 'element-ui'
+import 'element-ui/lib/theme-chalk/index.css'*/
+import App from './src/index.vue'
 
-import ScrollReveal from 'Js/scrollreveal.min.js';
+/*Vue.use(ElementUI)*/
 
-(function() {
-  "use strict";
-
-  window.sr = ScrollReveal();
-  sr.reveal('.banner', {
-    duration: 600,
-    scale: 0.3,
-    distance: '0px',
-    reset: true
-  }, 200);
-  sr.reveal('.sr-foods', {
-    duration: 600,
-    scale: 0.3,
-    distance: '0px',
-    reset: true
-  }, 100);
-})();
+new Vue({
+  el: '#app',
+  render: h => h(App)
+})
