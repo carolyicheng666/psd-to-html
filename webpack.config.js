@@ -42,6 +42,7 @@ module.exports = (options = {}) => ({
       names: ['manifest']
     }),
     new HtmlWebpackPlugin({
+      title: 'this is psd-to-html',
       template: 'dist/index.html'
     })
   ],
