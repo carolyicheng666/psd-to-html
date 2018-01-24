@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack-dev-server --inline --hot --env.dev",
-    "build": "rimraf dist && webpack -p --progress --hide-modules"
+    "build": "rimraf build && webpack -p --progress --hide-modules"
   },
   "repository": {
     "type": "git",

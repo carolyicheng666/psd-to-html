@@ -8,7 +8,7 @@ module.exports = (options = {}) => ({
     index: './dist/main.js'
   },
   output: {
-    path: resolve(__dirname, 'dist'),
+    path: resolve(__dirname, 'build'),
     filename: options.dev ? '[name].js' : '[name].js?[chunkhash]',
     chunkFilename: '[id].js?[chunkhash]'
   },
@@ -28,12 +28,7 @@ module.exports = (options = {}) => ({
       },
       {
         test: /\.(png|jpg|jpeg|gif|eot|ttf|woff|woff2|svg|svgz)(\?.+)?$/,
-        use: [{
-          loader: 'url-loader',
-          options: {
-            limit: 10000
-          }
-        }]
+        use: 'url-loader?limit=10000&name=images/[hash].[ext]'
       }
     ]
   },
