@@ -1,9 +1,8 @@
 import Vue from 'vue'
-/*import ElementUI from 'element-ui'
-import 'element-ui/lib/theme-chalk/index.css'*/
+import ScrollReveal from './src/js/scrollreveal.min.js'
 import App from './src/index.vue'
 
-/*Vue.use(ElementUI)*/
+Vue.prototype.ScrollReveal = ScrollReveal;
 
 new Vue({
   el: '#app',

@@ -6,11 +6,7 @@
           <a href=""></a>
         </div>
         <ul class="header-nav">
-          <li class="item"><a href="">Our Story</a></li>
-          <li class="item"><a href="">Menu</a></li>
-          <li class="item"><a href="">Reservations</a></li>
-          <li class="item"><a href="">News</a></li>
-          <li class="item"><a href="">Rviews</a></li>
+          <li class="item" v-for="item in header"><a href="">{{item}}</a></li>
         </ul>
       </div>
     </div>
@@ -31,70 +27,16 @@
       <div class="menu-tips">The Menu</div>
       <div class="public-container menu-list">
         <ul class="clearfix">
-          <li class="menu-item clearfix">
-            <a class="title">
-              <h4>Voluptate cillum fugiat.</h4>
-              <p class="comment">Cheese, tomato, mushrooms, onions.</p>
-            </a>
-            <div class="line"></div>
-            <div class="price">$50</div>
-          </li>
-          <li class="menu-item clearfix">
-            <a class="title">
-              <h4>Voluptate cillum fugiat.</h4>
-              <p class="comment">Cheese, tomato, mushrooms, onions.</p>
-            </a>
-            <div class="line"></div>
-            <div class="price">$50</div>
-          </li>
-          <li class="menu-item clearfix">
-            <a class="title">
-              <h4>Voluptate cillum fugiat.</h4>
-              <p class="comment">Cheese, tomato, mushrooms, onions.</p>
-            </a>
-            <div class="line"></div>
-            <div class="price">$50</div>
-          </li>
-          <li class="menu-item clearfix">
-            <a class="title">
-              <h4>Voluptate cillum fugiat.</h4>
-              <p class="comment">Cheese, tomato, mushrooms, onions.</p>
-            </a>
-            <div class="line"></div>
-            <div class="price">$50</div>
-          </li>
-          <li class="menu-item clearfix">
-            <a class="title">
-              <h4>Voluptate cillum fugiat.</h4>
-              <p class="comment">Cheese, tomato, mushrooms, onions.</p>
-            </a>
-            <div class="line"></div>
-            <div class="price">$50</div>
-          </li>
-          <li class="menu-item clearfix">
-            <a class="title">
-              <h4>Voluptate cillum fugiat.</h4>
-              <p class="comment">Cheese, tomato, mushrooms, onions.</p>
-            </a>
-            <div class="line"></div>
-            <div class="price">$50</div>
-          </li>
-          <li class="menu-item clearfix">
-            <a class="title">
-              <h4>Voluptate cillum fugiat.</h4>
-              <p class="comment">Cheese, tomato, mushrooms, onions.</p>
-            </a>
-            <div class="line"></div>
-            <div class="price">$50</div>
-          </li>
-          <li class="menu-item clearfix">
-            <a class="title">
-              <h4>Voluptate cillum fugiat.</h4>
-              <p class="comment">Cheese, tomato, mushrooms, onions.</p>
-            </a>
-            <div class="line"></div>
-            <div class="price">$50</div>
-          </li>
+          <template v-for="item in menu">
+            <li class="menu-item clearfix">
+              <a class="title">
+                <h4>{{item.title}}</h4>
+                <p class="comment">{{item.comment}}</p>
+              </a>
+              <div class="line"></div>
+              <div class="price">{{item.price}}</div>
+            </li>
+          </template>
         </ul>
       </div>
       <a href="" class="menu-more-btn">
@@ -108,66 +50,22 @@
         <h3>Featured Dishes</h3>
         <div class="line"></div>
         <div class="btn-group">
-          <a href="" class="btn"></a>
-          <a href="" class="btn active"></a>
-          <a href="" class="btn"></a>
-          <a href="" class="btn"></a>
+          <a v-for="(btn, index) in 4" href="" :class="{btn, active: index===1}"></a>
         </div>
       </div>
       <div class="index-panel-body index-food-list">
         <ul class="clearfix">
-          <li class="food-item">
-            <a href="">
-              <img class="banner" src="./images/food1.jpg">
-              <div class="name"><span class="price">$30</span>Fugiat nulla sint</div>
-              <div class="star-bar">
-                <span class="star"></span>
-                <span class="star"></span>
-                <span class="star"></span>
-                <span class="star"></span>
-                <span class="star nostar"></span>
-              </div>
-            </a>
-          </li>
-          <li class="food-item">
-            <a href="">
-              <img class="banner" src="./images/food2.jpg">
-              <div class="name"><span class="price">$24</span>Daute irure dolor</div>
-              <div class="star-bar">
-                <span class="star"></span>
-                <span class="star"></span>
-                <span class="star"></span>
-                <span class="star nostar"></span>
-                <span class="star nostar"></span>
-              </div>
-            </a>
-          </li>
-          <li class="food-item">
-            <a href="">
-              <img class="banner" src="./images/food3.jpg">
-              <div class="name"><span class="price">$60</span>Officia deserunt mollit</div>
-              <div class="star-bar">
-                <span class="star"></span>
-                <span class="star"></span>
-                <span class="star"></span>
-                <span class="star"></span>
-                <span class="star"></span>
-              </div>
-            </a>
-          </li>
-          <li class="food-item">
-            <a href="">
-              <img class="banner" src="./images/food4.jpg">
-              <div class="name"><span class="price">$17</span>Pim minim veniam</div>
-              <div class="star-bar">
-                <span class="star"></span>
-                <span class="star"></span>
-                <span class="star"></span>
-                <span class="star"></span>
-                <span class="star nostar"></span>
-              </div>
-            </a>
-          </li>
+          <template>
+            <li class="food-item" v-for="(item, index) in food">
+              <a href="">
+                <img class="banner" :src="item.src">
+                <div class="name"><span class="price">{{item.price}}</span>{{item.name}}</div>
+                <div class="star-bar" >
+                  <span v-for="(star, i) in 5" :class="{star, nostar: ((index<=1||index===3)&&i===4)||(index===1&&i===3)}"></span>
+                </div>
+              </a>
+            </li>
+          </template>
         </ul>
       </div>
     </div>
@@ -208,7 +106,44 @@
   </div>
 </template>
 <script>
-  
+  export default {
+    data() {
+      return {
+        header: ['Our Story', 'Menu', 'Reservations', 'News', 'Rviews'],
+        menu: [
+          { title: 'Voluptate cillum fugiat.', comment: 'Cheese, tomato, mushrooms, onions.', price: '$50' },
+          { title: 'Voluptate cillum fugiat.', comment: 'Cheese, tomato, mushrooms, onions.', price: '$50' },
+          { title: 'Voluptate cillum fugiat.', comment: 'Cheese, tomato, mushrooms, onions.', price: '$50' },
+          { title: 'Voluptate cillum fugiat.', comment: 'Cheese, tomato, mushrooms, onions.', price: '$50' },
+          { title: 'Voluptate cillum fugiat.', comment: 'Cheese, tomato, mushrooms, onions.', price: '$50' },
+          { title: 'Voluptate cillum fugiat.', comment: 'Cheese, tomato, mushrooms, onions.', price: '$50' },
+          { title: 'Voluptate cillum fugiat.', comment: 'Cheese, tomato, mushrooms, onions.', price: '$50' },
+          { title: 'Voluptate cillum fugiat.', comment: 'Cheese, tomato, mushrooms, onions.', price: '$50' }
+        ],
+        food: [
+          { src: require('./images/food1.jpg'), price: '$30', name: 'Fugiat nulla sint' },
+          { src: require('./images/food2.jpg'), price: '$24', name: 'Daute irure dolor' },
+          { src: require('./images/food3.jpg'), price: '$60', name: 'Officia deserunt mollit' },
+          { src: require('./images/food4.jpg'), price: '$17', name: 'Pim minim veniam' }
+        ]
+      }
+    },
+    mounted: function() {
+      window.sr = ScrollReveal();
+      sr.reveal('.banner', {
+        duration: 600,
+        scale: 0.3,
+        distance: '0px',
+        reset: true
+      }, 200);
+      sr.reveal('.sr-foods', {
+        duration: 600,
+        scale: 0.3,
+        distance: '0px',
+        reset: true
+      }, 100);
+    }
+  }
 </script>
 <style lang="scss">
   @import './sass/reset.scss';
