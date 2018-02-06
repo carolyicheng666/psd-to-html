@@ -3,6 +3,14 @@
 psd url: [psd](https://pan.baidu.com/s/1dHlMAS5)  
 password: jhqc
 
+
+
+## Preview
+
+![view](https://github.com/carolyicheng666/psd-to-html/blob/master/view.jpg)
+
+
+
 ## How to use
 
 First copy the repo into your disk. 
