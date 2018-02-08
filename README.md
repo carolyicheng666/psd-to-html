@@ -11,6 +11,13 @@ password: jhqc
 
 
 
+## Status
+
+[![Build Status](https://travis-ci.org/carolyicheng666/psd-to-html.svg?branch=master)](https://travis-ci.org/carolyicheng666/psd-to-html)
+[![GitHub license](https://img.shields.io/github/license/carolyicheng666/psd-to-html.svg)](https://github.com/carolyicheng666/psd-to-html/blob/master/LICENSE)
+
+
+
 ## How to use
 
 First copy the repo into your disk. 
