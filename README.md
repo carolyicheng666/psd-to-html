@@ -32,6 +32,12 @@ Then
 $ npm install
 ```
 
+Also you can use **yarn**
+
+``` bash
+$ yarn install
+```
+
 you should delete the `build` floder or delete files in `build` floder, it has two ways: Manually delete or
 
 ```bash
